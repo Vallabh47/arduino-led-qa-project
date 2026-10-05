@@ -24,10 +24,32 @@ and demonstrate how GitHub can be used to:
 
 - Arduino board
 - LED
-- 220Ω resistor
+- 220Ω current-limiting resistor
 - Connecting wires
 - Breadboard
 - USB cable
+
+### LED Connection
+
+The LED is connected to the Arduino LED output pin through a 220Ω
+current-limiting resistor.
+
+Connection:
+
+Arduino Pin 13 → 220Ω Resistor → LED Anode (+)
+
+LED Cathode (-) → Arduino GND
+
+### Hardware Verification
+
+Before testing the program:
+
+1. Verify the LED polarity.
+2. The longer LED leg (anode) should connect toward the Arduino output
+   through the resistor.
+3. The shorter LED leg (cathode) should connect to GND.
+4. Ensure the resistor is connected in series with the LED.
+5. Verify that all jumper-wire connections are secure.
 
 ## 4. Software Requirements
 
